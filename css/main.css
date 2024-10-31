@@ -816,6 +816,16 @@ footer{
         max-width: 40%;
     }
 
+    .logo {
+        width: 20%;
+    }
+    header nav {
+        width: 75%;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    
     /* *{
         margin: 0;
         padding: 0;
