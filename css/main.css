@@ -341,7 +341,7 @@ button.btn:hover{
     top: 0.7em;
     padding-left: 1em;
     /* background: url("fallback.png") no-repeat center; */
-    /* background-image: url("img/Right.svg"); */
+    /* background-image: url("./img/Right.svg"); */
     /* background-size: contain; */
 }
 
@@ -404,7 +404,7 @@ button.btn:hover{
     top: 0.5em;
     padding-left: 1em;
     /* background: url("fallback.png") no-repeat center; */
-    /* background-image: url("img/Right.svg"); */
+    /* background-image: url("./img/Right.svg"); */
     /* background-size: contain; */
 }
 
