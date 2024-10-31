@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFFFFF;
+    color: #4D4D4D;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    color: #717171;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.wraper{
+    background: #F5F7FA;
+}
+
+.wraper:first-child{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+/* @media (max-width: 990px){
+    .wraper{
+        width: max-content;
+    }
+} */
+
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/* Шапка сайта */
+
+header{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    width: 60%;
+    height: min-content;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    color: #4D4D4D;
+}
+
+header nav ul li.active a{
+    border-bottom: 5px solid #4CAF4F;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 5px solid #4CAF4F;
+}
+
+header nav ul li.btn a{
+    background-color: #4CAF4F;
+    color: #FFFFFF;
+    padding: 10px 22px;
+    border-radius: 2.78px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover{
+    background-color: #388E3B;
+}
+
+/* Первый блок */
+
+.hero{
+    padding: 8% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-info{
+    width: 60%;
+    align-self: center;
+    /* padding-top: 100px; */
+}
+
+.hero-info h1{
+    padding: 3% 0;
+}
+
+.hero-info h1 span{
+    color: #4CAF4F;
+}
+
+.hero-info p{
+    color: #4D4D4D;
+    margin-bottom: 5%;
+}
+
+
+button.btn{
+    background-color: #4CAF4F;
+    color: #FFFFFF;
+    padding: 14px 32px;
+    border: 0;
+    border-radius: 2.78px;
+    transition: all 500ms ease;
+}
+
+button.btn:hover{
+    cursor: pointer;
+    background-color: #388E3B;
+}
+
+/* Секция клиенты */
+
+.clients{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-clients{
+    align-self: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.text-clients h2{
+    padding: 1%;
+}
+
+.clients-logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Секция сообщества */
+
+.community{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.section-title{
+    align-self: center;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.section-title h2{
+    padding: 1%;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.description div{
+    width: 23%;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 0px 2px 4px -3px #ABBED1;
+    /* line-height: 1.5em; */
+    /* margin: 3%; */
+}
+
+.description div h3{
+    width: 70%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+/* Секция Unlock */
+
+.unlock{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-bottom: 2.5%;
+}
+
+.unlock-info{
+    width: 50%;
+}
+
+.unlock p{
+    padding: 3% 0;
+}
+
+/* Секция Achievements */
+
+.achievements{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.section-heading h2{
+    width: 62%;
+}
+
+.section-heading span{
+    color: #4CAF4F;
+}
+
+.counts{
+    display: grid;
+    width: 40%;
+    /* justify-content: space-between; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.counts > div{
+    display: flex;
+    padding: 5% 0;
+}
+
+.counts img{
+    padding-right: 10%;
+}
+
+/* Секция Calender */
+.calender{
+    padding: 2.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calender-info{
+    width: 50%;
+}
+
+.calender-info p{
+    padding: 3% 0;
+}
+
+/* Секция Customers */
+
+.customers{
+    padding: 2.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customers > img{
+    width: 32%;
+}
+
+.customers-info{
+    width: 61.6%;
+    padding-bottom: 2%;
+}
+
+.customers-info p{
+    font-weight: 500;
+}
+
+.customers-info h4{
+    color: #4CAF4F;
+    padding-top: 3%;
+}
+
+.customers-info span{
+    display: block;
+    color: #89939E;
+    padding: 2% 0 5%;
+}
+
+.icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons a{
+    color: #4CAF4F;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.icons a::after{
+    content: url('/img/Right.svg');
+    position: absolute;
+    top: 0.7em;
+    padding-left: 1em;
+    /* background: url("fallback.png") no-repeat center; */
+    /* background-image: url("/img/Right.svg"); */
+    /* background-size: contain; */
+}
+
+/* Секция Community Updates */
+
+.community-updates{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5% 0;
+}
+
+.community-updates-info{
+    width: 54%;
+    align-self: center;
+    text-align: center;
+} 
+
+.community-updates-info p{
+    padding: 3% 0;
+}
+
+.comunity-img{
+    display: flex;
+    gap: 5%;
+}
+
+.comunity-img > div{
+    width: 100%;
+}
+
+.div-img{
+    margin: 0 auto;
+    padding: 0 3%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 90%;
+    background-color: #F5F7FA;
+    bottom: 20%;
+    box-shadow: 0 8px 16px #abbed161;
+    border-radius: 8px;
+}
+
+.div-img h4{
+    color: #717171;
+}
+
+.div-img a{
+    color: #4CAF4F;
+    font-weight: bold;
+}
+
+.div-img a::after{
+    content: url('/img/Right.svg');
+    position: relative;
+    top: 0.5em;
+    padding-left: 1em;
+    /* background: url("fallback.png") no-repeat center; */
+    /* background-image: url("/img/Right.svg"); */
+    /* background-size: contain; */
+}
+
+/* Секция Get a Demo */
+.get-demo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5% 0;
+}
+
+.get-demo h1{
+    text-align: center;
+    width: 70%;
+    padding-bottom: 3%;
+}
+
+.get-demo button::after{
+    content: url('/img/RightW.svg');
+    /* fill: #F5F7FA; */
+    position: relative;
+    top: 0.3em;
+    padding-left: 1em;
+}
+
+/* Footer */
+.wraper-b{
+    background-color: #263238;
+}
+
+footer{
+    padding: 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info p{
+    color: #F5F7FA;
+    font-weight: 200;
+}
+
+.company-info > *{
+    padding-bottom: 15%;
+}
+
+.links{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col h4{
+    color: #FFFFFF;
+    /* padding-top: 0.3em; */
+    padding-bottom: 1.5em;
+    font-weight: 500;
+}
+
+.col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    list-style: none;
+}
+
+.col li, .col a{
+    /* padding-bottom: 15%; */
+    color: #F5F7FA;
+    font-size: 14px;
+    font-weight: 200;
+    
+}
+
+.col li:hover, .col a:hover{
+    cursor: pointer;
+    color: #4CAF4F;
+}
+
+.col a{
+    text-decoration: none;
+} 
+
+.col input{
+    color: #D9DBE1;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    width: 120%;
+    background-color: #515B60;
+    border: 0;
+    outline: none;
+    /* opacity: 40%; */
+    padding: 6% 8%;
+    border-radius: 8px;
+}
+
+.col input::placeholder{
+    color: #D9DBE1;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.col img{
+    position: relative;
+    bottom: 1.8em;
+    left: 120%;
+    cursor: pointer;
+}
+
+.social-links img{
+    cursor: pointer;
+    padding-right: 1em;
+}
+
+
+/* Страница про нас */
+.hero-about{
+    display: flex;
+    justify-content: space-around;
+    padding: 8% 0;
+}
+
+.about-info{
+    width: 60%;
+}
+
+.about-info h1{
+    padding: 3% 0;
+}
+
+.about-info p{
+    margin-bottom: 5%;
+}
+
+/* Секция Work */
+.work{
+    padding: 5% 0;
+}
+
+.work h2{
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.work-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-work-info{
+    padding: 3%;
+    background-color: #F5F7FA;
+    text-align: center;
+    border-radius: 8px;
+    width: 25%;
+}
+
+.block-work-info h4{
+    color: #4CAF4F;
+}
+
+
+.block-work-info h4::before{
+    content: url('/img/VectorP.svg');
+    margin-right: 3%;
+    position: relative;
+    top: 3px;
+}
+
+.block-work-info *{
+    padding: 3% 0;
+}
+
+
+
+.hero-about img{
+    width: 25%;
+}
+
+@media (max-width: 1200px) and (min-width: 350px) {
+    .container{
+        width: 80%;
+    }
+    p,a,li,.col li,h1,h2,h3,h4,span{
+        line-height: normal;
+    }
+    p, a, li,.col li,span{
+        font-size: 0.1em;
+    }
+    h1{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.7em;
+    }
+    h3{
+        font-size: 0.6em;
+    }
+    h4{
+        font-size: 0.5em;
+    }
+    img{
+        max-width: 30%;
+    }
+    header nav ul li.btn a{
+        padding: 21em 32em;
+    }
+    button.btn{
+        font-size: 0.5em;
+        padding: 0.5em 0.7em;
+    }
+    .clients-logos img{
+        width: 7%;
+    }
+    .description div{
+        width: auto;
+    }
+    .unlock{
+        justify-content: space-between;
+    }
+    .unlock-info {
+        width: 63%;
+    }
+    .section-heading h2 {
+        width: 82%;
+    }
+    .counts{
+        width: auto;
+    }
+    .counts img {
+        max-width: 20%;
+    }
+    .calender {
+        justify-content: space-between;
+    }
+    .calender-info {
+        width: 65%;
+    }
+    .icons img{
+        max-width: 10%;
+    }
+    .icons a::after,
+    .div-img a::after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-image: url('/img/Right.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 0.7em;
+        padding-left: 1em;
+    }
+    .comunity-img img{
+        max-width: 100%;
+    }
+    .get-demo button::after{
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        background-image: url('/img/RightW.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .company-info > *{
+        padding: 5% 0;
+        /* width: auto; */
+    }
+    .social-links img{
+        max-width: 10%;
+        padding: 0;
+    }
+    .links{
+        width: auto;        
+    }
+    .col{
+        width: 40%;
+    }
+    .col:last-of-type h4{
+        padding: 0;
+    }
+    .col ul{
+        gap: 0.3em;
+    }
+    .col input{
+        font-size: 0.1em;
+        width: 120%;
+        padding: 0 10%;
+    }
+    .col input::placeholder{
+        font-size: 0.1em;
+    }
+    .col img{
+        width: 12%;
+        position: relative;
+        bottom: 1.2em;
+    }
+
+    @media (min-width: 601px){
+        p,a,li,.col li,h1,h2,h3,h4,span{
+            line-height: normal;
+        }
+        p, a, li,.col li,span{
+            font-size: 0.5em;
+        }
+        h1{
+            font-size: 1.3em;
+        }
+        h2{
+            font-size: 1.2em;
+        }
+        h3{
+            font-size: 1.1em;
+        }
+        h4{
+            font-size: 1em;
+        }
+        img{
+            max-width: 50%;
+        }
+        header nav ul li.btn a {
+            padding: 10px 22px;
+        }
+        .achievements {
+            justify-content: space-between;
+        }
+        .icons a::after, .div-img a::after {
+            width: 7px;
+            height: 15px;
+            top: 0.6em;
+        }
+        .col img {
+            width: 8%;
+        }
+    }
+}
+
+@media (max-width: 349px){
+    .container{
+        /* min-width: 349px; */
+        max-width: 85vw;
+        /* max-width: max-content;
+        width: 349px;*/
+        margin: 0 auto; 
+    }
+
+    header{
+        justify-content: safe;
+    }
+    header nav ul li.btn a{
+        padding: 0;
+    }
+
+    .clients{
+        padding: 2.5% 0;
+    }
+    .clients-logos img{
+        width: 5%;
+    }
+
+    .counts img {
+        padding: 0;
+    }
+
+    .icons img{
+        width: 5%;
+    }
+    .icons a::after{
+        content: "";
+    }
+
+    /* .comunity-img img{
+        max-width: 100%;
+    } */
+
+    .col input{
+        font-size: 0.1em;
+        width: 100%;
+        padding: 0; 
+    }
+    .col input::placeholder{
+        font-size: 0.1em;
+    }
+
+    p,a,li,.col li,h1,h2,h3,h4,span{
+        line-height: normal;
+    }
+    p, a, li,.col li,span{
+        font-size: 0.1em;
+    }
+    h1{
+        font-size: 0.8em;
+    }
+    h2{
+        font-size: 0.5em;
+    }
+    h3{
+        font-size: 0.4em;
+    }
+    h4{
+        font-size: 0.3em;
+    }
+    img{
+        max-width: 40%;
+    }
+
+    /* *{
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    p,a,li,.col li,h1,h2,h3,h4,span{
+        line-height: normal;
+    }
+    p, a, li,.col li,span{
+        font-size: 0.08em;
+    }
+    h1{
+        font-size: 0.8em;
+    }
+    h2{
+        font-size: 0.5em;
+    }
+    h3{
+        font-size: 0.4em;
+    }
+    h4{
+        font-size: 0.3em;
+    }
+    img{
+        max-width: 20%;
+    }
+    .clients{
+        padding: 2.5% 0;
+    }
+    .clients-logos img, .icons img{
+        width: 7%;
+    }
+    .col input{
+        font-size: 0.1em;
+        width: 100%;
+        padding: 0; 
+    }
+    .col input::placeholder{
+        font-size: 0.1em;
+    }
+    .icons a::after{
+        content: "";
+    } */
+}
